@@ -9,12 +9,12 @@ const CONFIG = {
 
 // Portfolio data for AI context
 const PORTFOLIO_CONTEXT = `
-You are an AI assistant for Hunzila Nisar's portfolio. Here's information about her:
+You are an AI assistant for Rabbia Akram's portfolio. Here's information about her:
 
 PROFILE:
-- Name: Hunzila Nisar
+- Name: Rabbia Akram
 - Location: Lodhran, Pakistan
-- Email: hunzilanisar123@gmail.com
+- Email: racreationagency05@gmail.com
 - Phone: +92 318 6326746
 - Title: AI/ML Engineer & Full-Stack Developer
 - Education: BSc in Artificial Intelligence from The Islamia University of Bahawalpur (2021-2025)
@@ -48,7 +48,7 @@ ACHIEVEMENTS:
 - A+ grade in Final Year Project
 - Multiple certifications and awards
 
-Answer questions about Hunzila's skills, projects, experience, and qualifications in a friendly, professional manner.
+Answer questions about Rabbia's skills, projects, experience, and qualifications in a friendly, professional manner.
 `;
 
 // ===================================
@@ -446,7 +446,7 @@ async function callGeminiAPI(userMessage) {
 
 User Question: ${userMessage}
 
-Please provide a helpful, friendly response based on Hunzila's portfolio information. Keep responses concise (2-3 sentences) and professional.`;
+Please provide a helpful, friendly response based on Rabbia's portfolio information. Keep responses concise (2-3 sentences) and professional.`;
     
     try {
         const response = await fetch(`${CONFIG.GEMINI_API_URL}?key=${CONFIG.GEMINI_API_KEY}`, {
@@ -516,7 +516,7 @@ function getFallbackResponse(message) {
     
     // Skills related
     if (lowerMessage.includes('skill') || lowerMessage.includes('technology')) {
-        return "Hunzila specializes in AI/ML (Python, PyTorch, TensorFlow, OpenCV) and Full-Stack Development (React, Node.js, Express, MongoDB). She also has IoT experience with Arduino and ESP32!";
+        return "Rabbia specializes in AI/ML (Python, PyTorch, TensorFlow, OpenCV) and Full-Stack Development (React, Node.js, Express, MongoDB). She also has IoT experience with Arduino and ESP32!";
     }
     
     // Projects related
@@ -526,7 +526,7 @@ function getFallbackResponse(message) {
     
     // Experience related
     if (lowerMessage.includes('experience') || lowerMessage.includes('work')) {
-        return "Hunzila worked as a Project Engineer on the Smart Helmet project at IUB and completed a Front-End Development internship focusing on React. She has 3+ years of hands-on experience in AI/ML and web development.";
+        return "Rabbia worked as a Project Engineer on the Smart Helmet project at IUB and completed a Front-End Development internship focusing on React. She has 3+ years of hands-on experience in AI/ML and web development.";
     }
     
     // Education related
@@ -536,7 +536,7 @@ function getFallbackResponse(message) {
     
     // Contact related
     if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('reach')) {
-        return "You can reach Hunzila at hunzilanisar123@gmail.com or +92 318 6326746. Feel free to connect via LinkedIn or GitHub as well!";
+        return "You can reach Rabbia at racreationagency05@gmail.com or +92 318 6326746. Feel free to connect via LinkedIn or GitHub as well!";
     }
     
     // Achievements related
@@ -546,16 +546,16 @@ function getFallbackResponse(message) {
     
     // Location related
     if (lowerMessage.includes('location') || lowerMessage.includes('where')) {
-        return "Hunzila is based in Lodhran, Pakistan. She's open to remote opportunities and collaborations worldwide!";
+        return "Rabbia is based in Lodhran, Pakistan. She's open to remote opportunities and collaborations worldwide!";
     }
     
     // Hire/collaborate related
     if (lowerMessage.includes('hire') || lowerMessage.includes('collaborate') || lowerMessage.includes('available')) {
-        return "Hunzila is currently open to exciting opportunities in AI/ML and Full-Stack Development! Feel free to reach out via the contact form or email at hunzilanisar123@gmail.com.";
+        return "Rabbia is currently open to exciting opportunities in AI/ML and Full-Stack Development! Feel free to reach out via the contact form or email at RabbiaAkram123@gmail.com.";
     }
     
     // Default response
-    return "I'm here to help you learn about Hunzila's skills, projects, and experience! You can ask me about her technical expertise, projects, education, or how to get in touch. What would you like to know?";
+    return "I'm here to help you learn about Rabbia's skills, projects, and experience! You can ask me about her technical expertise, projects, education, or how to get in touch. What would you like to know?";
 }
 
 // ===================================
@@ -580,10 +580,10 @@ images.forEach(img => imageObserver.observe(img));
 // ===================================
 // Console Easter Egg
 // ===================================
-console.log('%cHunzila Nisar Portfolio', 'color: #00f0ff; font-size: 24px; font-weight: bold;');
+console.log('%cRabbia Akram Portfolio', 'color: #00f0ff; font-size: 24px; font-weight: bold;');
 console.log('%cLooking for a talented AI/ML Engineer? You found one!', 'color: #b744ff; font-size: 14px;');
-console.log('%cEmail: hunzilanisar123@gmail.com', 'color: #a0aec0; font-size: 12px;');
-console.log('%cGitHub: github.com/HunzilaRajput746', 'color: #a0aec0; font-size: 12px;');
+console.log('%cEmail: racreationagency05@gmail.com', 'color: #a0aec0; font-size: 12px;');
+console.log('%cGitHub: github.com/RabbiaRajput746', 'color: #a0aec0; font-size: 12px;');
 
 // ===================================
 // Performance Optimization
